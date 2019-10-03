@@ -1,18 +1,18 @@
 const CatchTheFrog = function () {
-    let numoffrogs= 1
+    let numoffrogs= 2
     let levelnum= 1
     let time=1000
     let frogs =[ 
             {
                 id: "p1",
-                position={
+                position:{
                     top: "20vh",
                     left: "30vh"
                 }
             },
             {
                 id: "p2",
-                position={
+                position:{
                     top: "10vh",
                     left: "50vh"
                 }
@@ -37,11 +37,11 @@ const CatchTheFrog = function () {
         return frogs
     }
     const addfrog= function () {
-        let position1=Math.random()*80+"vh"
-        let position2=Math.random()*80+"vh"
+        let position1=Math.round(( Math.random()*80))+"vh"
+        let position2=Math.round(( Math.random()*80))+"vh"
         let newfrog={
-            id:"p" + ++postidCounter,
-            position={top:position1, left:position2}
+            id:"p" + ++numoffrogs,
+            position:{top:position1, left:position2}
         }
         frogs.push(newfrog)
     }
