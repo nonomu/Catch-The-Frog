@@ -1,6 +1,6 @@
 #container{
     display: grid;
-    grid-template-rows: 1fr 10fr 2fr;
+    grid-template-rows: 1fr 12fr 2fr;
     height: 100vh;
 }
 #upper{
@@ -23,5 +23,7 @@
 
 i.fas.fa-frog{
    font-size: 10vh;
-    
+   position: absolute;
+   left: 20vh;
+   top: 10vh;
 }
